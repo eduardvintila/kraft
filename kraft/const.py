@@ -170,6 +170,7 @@ UK_CORE_ARCHS = [
     'x86_64',
     'arm64',
     'arm',
+    'riscv64'
 ]
 UK_CORE_PLATS = [
     'kvm',

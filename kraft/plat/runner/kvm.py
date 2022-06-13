@@ -67,6 +67,8 @@ class KVMRunner(Runner):
             self._cmd.extend(('-t', 'x86pc'))
         elif self.architecture == "arm64":
             self._cmd.extend(('-t', 'arm64v'))
+        elif self.architecture == "riscv64":
+            self._cmd.extend(('-t', 'riscv64gc'))
 
         if platform.machine() != self.architecture:
             self._cmd.append('-W')
